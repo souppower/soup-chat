@@ -1,0 +1,28 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  node:
+    version: "6"
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    GOROOT: ""
+    GOPATH: "${HOME}/.go_workspace:/usr/local/go_workspace:${HOME}/.go_project"
+
+dependencies:
+  cache_directories:
+    - ~/.cache/yarn
+  override:
+    - mkdir -p ~/.go_project/src/github.com/${CIRCLE_PROJECT_USERNAME}
+    - ln -s ${HOME}/${CIRCLE_PROJECT_REPONAME} ${HOME}/.go_project/src/github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
+    - sudo add-apt-repository ppa:masterminds/glide -y
+    - sudo apt-get update
+    - sudo apt-get install glide -y
+    - glide up:
+        pwd: api
+    - yarn:
+        pwd: front
+
+test:
+  override:
+    - ./api/test.sh
+    - ./front/test.sh

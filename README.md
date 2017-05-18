@@ -1,0 +1,1 @@
+# soup-chat [![CircleCI](https://circleci.com/gh/souppower/soup-chat.svg?style=svg)](https://circleci.com/gh/souppower/soup-chat)

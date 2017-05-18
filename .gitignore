@@ -80,3 +80,6 @@ chat
 .glide/
 
 vendor/
+
+front/src/**/*.js
+front/dist/
