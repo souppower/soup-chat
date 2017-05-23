@@ -80,6 +80,7 @@ chat
 .glide/
 
 vendor/
+keys.go
 
 front/src/**/*.js
 front/dist/
