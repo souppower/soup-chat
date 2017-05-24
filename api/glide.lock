@@ -1,8 +1,8 @@
 hash: a6634241d204d126274f29329bd26b48858fd72299da68507f96e5a17aafb395
-updated: 2017-05-23T20:50:59.601458119+09:00
+updated: 2017-05-24T22:05:01.51841507+09:00
 imports:
 - name: github.com/clbanning/x2j
-  version: 15e4c5e8e752cf6b7f819a601917b48a19258928
+  version: 70c25f62ac605396c6f3e14f2113fd709c79af28
 - name: github.com/gorilla/websocket
   version: 3ab3a8b8831546bd18fd182c20687ca853b2bb13
 - name: github.com/stretchr/codecs
