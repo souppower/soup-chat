@@ -68,7 +68,7 @@ typings/
 *.dll
 *.so
 *.dylib
-chat
+api/chat/chat
 
 # Test binary, build with `go test -c`
 *.test
