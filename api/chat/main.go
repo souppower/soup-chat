@@ -50,7 +50,7 @@ func main() {
 		google.New(GoogleClientID, GoogleSecretKey, "http://localhost:8080/auth/callback/google"),
 	)
 
-	r := newRoom(UseFileSystemAvatar)
+	r := newRoom()
 	r.tracer = trace.New(os.Stdout)
 	http.Handle("/avatars/",
 		http.StripPrefix("/avatars/",

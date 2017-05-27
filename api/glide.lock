@@ -1,10 +1,18 @@
-hash: a6634241d204d126274f29329bd26b48858fd72299da68507f96e5a17aafb395
-updated: 2017-05-24T22:05:01.51841507+09:00
+hash: 9d5992dc4d883a34f7f5eb34265ddc29ddd8e570dbc17037cc4ad4faeb30c603
+updated: 2017-05-27T14:36:41.347899902+09:00
 imports:
 - name: github.com/clbanning/x2j
   version: 70c25f62ac605396c6f3e14f2113fd709c79af28
+- name: github.com/davecgh/go-spew
+  version: 04cdfd42973bb9c8589fd6a731800cf222fde1a9
+  subpackages:
+  - spew
 - name: github.com/gorilla/websocket
   version: 3ab3a8b8831546bd18fd182c20687ca853b2bb13
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
 - name: github.com/stretchr/codecs
   version: 04a5b1e1910de7aaf00e1d4419d2508247fba1b4
   subpackages:
@@ -24,14 +32,20 @@ imports:
   - providers/facebook
   - providers/github
   - providers/google
+  - test
 - name: github.com/stretchr/objx
-  version: 1a9d0bb9f541897e62256577b352fdbc1fb4fd94
+  version: cbeaeb16a013161a98496fad62933b1d21786672
 - name: github.com/stretchr/signature
   version: 168b2a1e1b562bf381d47471e31f5979a2a51cd5
 - name: github.com/stretchr/stew
   version: 80ef0842b48b329a6120607c817a85aff5a2ec71
   subpackages:
   - strings
+- name: github.com/stretchr/testify
+  version: eb84487caee2d64c96bb5c6afb60fd4f631eb0f0
+  subpackages:
+  - assert
+  - mock
 - name: github.com/stretchr/tracer
   version: 66d3696bba973e1697f7d68413b3f19c6d6e2a7c
 - name: github.com/ugorji/go
